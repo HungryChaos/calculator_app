@@ -83,9 +83,9 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             }
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: color ?? const Color(0xFF2C2C2C), // Dark grey
+            backgroundColor: color ?? const Color(0xFF2C2C2C), 
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(8), // Rectangle with slightly rounded edges
+              borderRadius: BorderRadius.circular(8), 
             ),
             padding: const EdgeInsets.symmetric(vertical: 22),
           ),
@@ -104,7 +104,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF121212), // Samsung calculator dark background
+      backgroundColor: const Color(0xFF121212), 
       body: Column(
         children: [
           Expanded(
@@ -121,7 +121,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   Text(result,
                       style: const TextStyle(
                           fontSize: 40,
-                          color: Color(0xFF39FF14), // Samsung-ish green result
+                          color: Color(0xFF39FF14),
                           fontWeight: FontWeight.bold)),
                 ],
               ),
@@ -157,7 +157,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 buildButton('0'),
                 buildButton('.'),
                 buildButton('=',
-                    color: const Color(0xFF39FF14)), // Bright green = button
+                    color: const Color(0xFF39FF14)), 
               ]),
             ],
           ),
